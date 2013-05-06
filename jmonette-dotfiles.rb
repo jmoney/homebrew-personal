@@ -8,21 +8,20 @@ class JmonetteDotfiles < Formula
   sha1 'cf491de9d9fe30114a0475d07cbcf88288351270'
 
   def install
-    prefix.install 'zsh'
-    ohai "#{prefix}+zsh"
-
-    prefix.install 'git'
-    ohai "#{prefix}+git"
-
+    ohai "#{prefix}/maven"
     prefix.install 'maven'
-    ohai "#{prefix}+maven"
 
+    ohai "#{prefix}/git"
+    prefix.install 'git'
+
+    ohai "#{prefix}/emacs"
     prefix.install 'emacs'
-    ohai "#{prefix}+emacs"
 
+    ohai "#{prefix}/ssh"
     prefix.install 'ssh'
-    ohai "#{prefix}+ssh"
 
-#    system "./setup.sh"
+    ohai "#{prefix}/zsh"
+    inreplace 'zsh/zshrc-mac' '${HOME}/Library/dotfiles', "#{prefix}"
+    prefix.install 'zsh'
   end
 end
