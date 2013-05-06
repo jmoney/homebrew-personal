@@ -1,6 +1,7 @@
 require 'formula'
 
 class JmonetteDotfiles < Formula
+  head 'https://github.com/jmonette/dotfiles.git'
   homepage 'http://jmonette.github.io/dotfiles'
   url 'https://github.com/jmonette/dotfiles/archive/master.zip'
   version '0.1'
