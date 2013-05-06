@@ -9,6 +9,7 @@ class JmonetteDotfiles < Formula
 
   def install
     ohai "#{prefix}"
+    prefix.install %w{zsh git maven emacs ssh}
 #    system "./setup.sh"
   end
 end
