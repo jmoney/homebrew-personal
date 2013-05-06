@@ -8,6 +8,7 @@ class JmonetteDotfiles < Formula
   sha1 'cf491de9d9fe30114a0475d07cbcf88288351270'
 
   def install
-    system "./setup.sh"
+    ohai "#{prefix}"
+#    system "./setup.sh"
   end
 end
