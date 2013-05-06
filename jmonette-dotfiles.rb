@@ -8,8 +8,21 @@ class JmonetteDotfiles < Formula
   sha1 'cf491de9d9fe30114a0475d07cbcf88288351270'
 
   def install
-    ohai "#{prefix}"
-    prefix.install %w{zsh git maven emacs ssh}
+    prefix.install 'zsh'
+    ohai "#{prefix}+zsh"
+
+    prefix.install 'git'
+    ohai "#{prefix}+git"
+
+    prefix.install 'maven'
+    ohai "#{prefix}+maven"
+
+    prefix.install 'emacs'
+    ohai "#{prefix}+emacs"
+
+    prefix.install 'ssh'
+    ohai "#{prefix}+ssh"
+
 #    system "./setup.sh"
   end
 end
