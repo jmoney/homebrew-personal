@@ -21,7 +21,7 @@ class JmonetteDotfiles < Formula
     prefix.install 'ssh'
 
     ohai "#{prefix}/zsh"
-    inreplace 'zsh/zshrc-mac' '${HOME}/Library/dotfiles', "#{prefix}"
+    inreplace 'zsh/zshrc-mac', '${HOME}/Library/dotfiles', "#{prefix}"
     prefix.install 'zsh'
   end
 end
