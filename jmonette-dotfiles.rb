@@ -27,8 +27,6 @@ class JmonetteDotfiles < Formula
     if File.exists?("#{ENV["HOME"]}/.zshrc") or File.symlink?("#{ENV["HOME"]}/.zshrc")
       opoo "#{ENV["HOME"]}/.zshrc already exists"
     end
-#    opoo "#{ENV["HOME"]}/.zshrc already exits!!!" if File.exists?("#{ENV["HOME"]}/.zshrc")
-#    opoo "#{ENV["HOME"]}/.zshrc already symlinked!!!" if File.symlink?("#{ENV["HOME"]}/.zshrc")
 
   end
 end
