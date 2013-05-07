@@ -25,7 +25,7 @@ class JmonetteDotfiles < Formula
     prefix.install 'zsh'
 
     if File.exists?("#{ENV["HOME"]}/.zshrc") || File.symlink?("#{ENV["HOME"]}/.zshrc")
-      opoo ("#{ENV["HOME"]}/.zshrc already exits!!!"
+      opoo "#{ENV["HOME"]}/.zshrc already exits!!!"
     end
   end
 end
