@@ -23,5 +23,9 @@ class JmonetteDotfiles < Formula
     ohai "#{prefix}/zsh"
     inreplace 'zsh/zshrc-mac', '${HOME}/Library/dotfiles', "#{prefix}"
     prefix.install 'zsh'
+
+    if File.exists("#{ENV["HOME"]}/.zshrc" || File.symlink?("#{ENV["HOME"]}/.zshrc")
+      opoo "#{ENV["HOME"]}/.zshrc already exits!!!"
+    end
   end
 end
