@@ -8,25 +8,27 @@ class JmonetteDotfiles < Formula
   sha1 'cf491de9d9fe30114a0475d07cbcf88288351270'
 
   def install
-    ohai "#{prefix}/maven"
-    prefix.install 'maven'
-
-    ohai "#{prefix}/git"
-    prefix.install 'git'
+    ohai "#{prefix}/zsh"
+    inreplace 'zsh/zshrc', '${HOME}/Library/dotfiles', "#{prefix}"
+    prefix.install 'zsh'
 
     ohai "#{prefix}/emacs"
     prefix.install 'emacs'
 
-    ohai "#{prefix}/ssh"
-    prefix.install 'ssh'
+    ohai "#{prefix}/git"
+    prefix.install 'git'
 
-    ohai "#{prefix}/zsh"
-    inreplace 'zsh/zshrc-mac', '${HOME}/Library/dotfiles', "#{prefix}"
-    prefix.install 'zsh'
 
-    if File.exists?("#{ENV["HOME"]}/.zshrc") or File.symlink?("#{ENV["HOME"]}/.zshrc")
-      opoo "#{ENV["HOME"]}/.zshrc already exists"
-    end
+    ohai "#{prefix}/maven"
+    prefix.install 'maven'
 
   end
+
+  def caveats; <<-EOS.undent
+    There are two ways for using these dotfiles.
+    1) Have symlinks in #{ENV["HOME"]} point to the appropriate files in #{prefix}
+    2) Configure zsh, emacs, and git to point to the appropriate directories.
+
+    Preference is (1) however configuration is left up to the user.
+  EOS
 end
