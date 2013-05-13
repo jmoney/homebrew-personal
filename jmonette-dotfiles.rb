@@ -7,6 +7,7 @@ class JmonetteDotfiles < Formula
   version '0.1'
   sha1 'cf491de9d9fe30114a0475d07cbcf88288351270'
 
+  depends_on :coreutils => :recommended
   def install
     ohai "#{prefix}/zsh"
     inreplace 'zsh/zshrc', '${HOME}/Library/dotfiles', "#{prefix}"
