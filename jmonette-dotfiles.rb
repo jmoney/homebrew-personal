@@ -26,9 +26,10 @@ class JmonetteDotfiles < Formula
 
   def caveats; <<-EOS.undent
     There are two ways for using these dotfiles.
-    1) Have symlinks in #{ENV["HOME"]} point to the appropriate files in #{prefix}
-    2) Configure zsh, emacs, and git to point to the appropriate directories.
+      1) Have symlinks in #{ENV["HOME"]} point to the appropriate files in #{prefix}
+      2) Configure zsh, emacs, and git to point to the appropriate directories.
 
     Preference is (1) however configuration is left up to the user.
-  EOS
+    EOS
+  end
 end
