@@ -26,9 +26,6 @@ class JmonetteDotfiles < Formula
     ohai "#{prefix}/setup.sh"
     inreplace 'setup.sh', '`brew --prefix`', "#{prefix}"
     prefix.install 'setup.sh'
-    
-    ohai "Running setup.sh"
-    system "./setup.sh"
   end
 
   def caveats; <<-EOS.undent
