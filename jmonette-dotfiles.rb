@@ -5,7 +5,7 @@ class JmonetteDotfiles < Formula
   homepage 'http://jmonette.github.io/dotfiles'
   url 'https://github.com/jmonette/dotfiles/archive/master.zip'
   version '0.1'
-  sha1 'c142009e545650a004fe64b88a0153ea71398abe'
+  sha1 '7ab41220a0d2da4ea7ddd5077a52bf588730ac16'
 
   depends_on 'coreutils' => :recommended
 
