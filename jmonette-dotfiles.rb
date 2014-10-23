@@ -20,10 +20,11 @@ class JmonetteDotfiles < Formula
     ohai "#{prefix}/git"
     prefix.install 'git'
 
-
     ohai "#{prefix}/maven"
     prefix.install 'maven'
 
+    prefix.install 'setup.sh'
+    system "./setup.sh"
   end
 
   def caveats; <<-EOS.undent
