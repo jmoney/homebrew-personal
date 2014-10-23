@@ -23,7 +23,11 @@ class JmonetteDotfiles < Formula
     ohai "#{prefix}/maven"
     prefix.install 'maven'
 
+    ohai "#{prefix}/setup.sh"
+    inreplace 'setup.sh', '`brew --prefix`', "#{prefix}"
     prefix.install 'setup.sh'
+    
+    ohai "Running setup.sh"
     system "./setup.sh"
   end
 
