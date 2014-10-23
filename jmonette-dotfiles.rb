@@ -5,7 +5,7 @@ class JmonetteDotfiles < Formula
   homepage 'http://jmonette.github.io/dotfiles'
   url 'https://github.com/jmonette/dotfiles/archive/master.zip'
   version '0.1'
-  sha1 '7ab41220a0d2da4ea7ddd5077a52bf588730ac16'
+  sha1 '7376a929d92d2ee8d9a8b3577ca642ef7979e7a4'
 
   depends_on 'coreutils' => :recommended
 
@@ -24,7 +24,7 @@ class JmonetteDotfiles < Formula
     prefix.install 'maven'
 
     ohai "#{prefix}/setup.sh"
-    inreplace 'setup.sh', '`brew --prefix`', "#{prefix}"
+    inreplace 'setup.sh', '${HOME}/Library/dotfiles', "#{prefix}"
     prefix.install 'setup.sh'
   end
 
