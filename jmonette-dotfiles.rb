@@ -3,12 +3,13 @@ require 'formula'
 class JmonetteDotfiles < Formula
   homepage 'http://jmonette.github.io/dotfiles'
   url 'https://github.com/jmonette/dotfiles/archive/v0.1.zip'
-  version '0.1'
   sha1 '92b92b871d871cd17792267e1ea9dfa78040dcb3'
 
+  head 'https://github.com/jmonette/dotfiles.git'
+
   depends_on 'coreutils' => :recommended
+  depends_on 'git' => :recommended
   depends_on 'zsh'
-  depends_on 'git'
   depends_on 'maven'
   depends_on 'emacs'
 
