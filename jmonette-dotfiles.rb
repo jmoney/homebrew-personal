@@ -1,13 +1,16 @@
 require 'formula'
 
 class JmonetteDotfiles < Formula
-  head 'https://github.com/jmonette/dotfiles.git'
   homepage 'http://jmonette.github.io/dotfiles'
-  url 'https://github.com/jmonette/dotfiles/archive/master.zip'
+  url 'https://github.com/jmonette/dotfiles/archive/v0.1.zip'
   version '0.1'
-  sha1 '6eb70a3c83876686bb88d872f83c185847099fa7'
+  sha1 '7376a929d92d2ee8d9a8b3577ca642ef7979e7a4'
 
   depends_on 'coreutils' => :recommended
+  depends_on 'zsh'
+  depends_on 'git'
+  depends_on 'maven'
+  depends_on 'emacs'
 
   def install
     ohai "#{prefix}/zsh"
