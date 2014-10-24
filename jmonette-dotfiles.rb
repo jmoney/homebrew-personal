@@ -8,7 +8,6 @@ class JmonetteDotfiles < Formula
   head 'https://github.com/jmonette/dotfiles.git'
 
   depends_on 'coreutils' => :recommended
-  depends_on 'git' => :recommended
   depends_on 'zsh'
   depends_on 'maven'
   depends_on 'emacs'
