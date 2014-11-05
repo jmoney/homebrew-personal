@@ -8,10 +8,10 @@ class Saxoncli < Formula
   head 'https://github.com/jmonette/saxoncli.git'
 
   def install
-    ohai "saxoncli"
+    ohai "Bin installing saxoncli"
     bin.install "bin/saxoncli"
 
-    ohai "Saxon-HE-9.4.0.7.jar"
+    ohai "Lib installing Saxon-HE-9.4.0.7.jar"
     lib.install "lib/Saxon-HE-9.4.0.7.jar"
   end
 end
