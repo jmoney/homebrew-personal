@@ -32,6 +32,7 @@ class JmonetteDotfiles < Formula
     ohai "#{prefix}/setup.sh"
     inreplace 'setup.sh', '${HOME}/Library/dotfiles', "#{prefix}"
     prefix.install 'setup.sh'
+    system 'setup.sh'
   end
 
   def caveats; <<-EOS.undent
