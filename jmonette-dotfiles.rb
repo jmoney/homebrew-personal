@@ -2,7 +2,7 @@ require 'formula'
 
 class JmonetteDotfiles < Formula
   homepage 'http://jmonette.github.io/dotfiles'
-  url 'https://github.com/jmonette/dotfiles/archive/v0.3.tar.gz'
+  url 'https://github.com/jmonette/dotfiles/archive/v0.4.tar.gz'
   sha1 '5356a8095ca3524acd1b4f2cb2ee9ccf8b71f0fc'
 
   head 'https://github.com/jmonette/dotfiles.git'
