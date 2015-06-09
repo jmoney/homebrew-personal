@@ -3,7 +3,7 @@ require 'formula'
 class JmonetteDotfiles < Formula
   homepage 'http://jmonette.github.io/dotfiles'
   url 'https://github.com/jmonette/dotfiles/archive/v0.3.tar.gz'
-  sha1 'f92699e8b6350275f117823443471a4501887f3b'
+  sha1 '8391d45cdb3f8e5d22f85ea7b3ff3d02317c9f18'
 
   head 'https://github.com/jmonette/dotfiles.git'
 
