@@ -2,8 +2,8 @@ require 'formula'
 
 class JmonetteDotfiles < Formula
   homepage 'http://jmonette.github.io/dotfiles'
-  url 'https://github.com/jmonette/dotfiles/archive/v0.2.tar.gz'
-  sha1 '7300f39825e69dfb8c8061cc1a0339b70c816be8'
+  url 'https://github.com/jmonette/dotfiles/archive/v0.3.tar.gz'
+  sha1 'f92699e8b6350275f117823443471a4501887f3b'
 
   head 'https://github.com/jmonette/dotfiles.git'
 
