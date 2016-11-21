@@ -3,7 +3,7 @@ require 'formula'
 class Jmoney8080Dotfiles < Formula
   homepage 'http://jmoney8080.github.io/dotfiles'
   url 'https://github.com/jmoney8080/dotfiles/archive/v0.6.tar.gz'
-  sha256 'd8626b13b8313c296570659602a2f16cd1de1d59'
+  sha256 '8872a01447999b51b6e463914aba8aa8c21589a6a363881ff9648e06da5f3696'
 
   head 'https://github.com/jmoney8080/dotfiles.git'
 
