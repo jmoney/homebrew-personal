@@ -1,11 +1,11 @@
 require 'formula'
 
-class JmonetteDotfiles < Formula
-  homepage 'http://jmonette.github.io/dotfiles'
-  url 'https://github.com/jmonette/dotfiles/archive/v0.5.tar.gz'
-  sha1 '03a9a12b703b1e59bcfa0e3907cf0cfc8ac7e350'
+class Jmoney8080Dotfiles < Formula
+  homepage 'http://jmoney8080.github.io/dotfiles'
+  url 'https://github.com/jmoney8080/dotfiles/archive/v0.6.tar.gz'
+  sha256 'd8626b13b8313c296570659602a2f16cd1de1d59'
 
-  head 'https://github.com/jmonette/dotfiles.git'
+  head 'https://github.com/jmoney8080/dotfiles.git'
 
   depends_on 'coreutils' => :recommended
   depends_on 'zsh'
