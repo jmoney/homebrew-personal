@@ -2,8 +2,8 @@ require 'formula'
 
 class Jmoney8080Dotfiles < Formula
   homepage 'http://jmoney8080.github.io/dotfiles'
-  url 'https://github.com/jmoney8080/dotfiles/archive/v1.0.1.tar.gz'
-  sha256 '1dcbfba03517af2efa6d75c7748863a1831fb10e5e795bfc6acb42fe233973cf'
+  url 'https://github.com/jmoney8080/dotfiles/archive/v1.0.2.tar.gz'
+  sha256 'f56458292e21a64aaa256abb469e443e1062e3bde556ebc342cad6db8738f817'
 
   head 'https://github.com/jmoney8080/dotfiles.git'
 
