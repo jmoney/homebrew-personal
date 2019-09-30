@@ -34,7 +34,7 @@ class Jmoney8080Dotfiles < Formula
     prefix.install 'setup.sh'
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<-EOS
     There are two ways for using these dotfiles.
       1) Have symlinks in #{ENV["HOME"]} point to the appropriate files in #{prefix}
       2) Configure zsh, emacs, and git to point to the appropriate directories.
