@@ -2,7 +2,7 @@ require 'formula'
 
 class JmoneyDotfiles < Formula
   homepage 'https://www.github.com/jmoney/dotfiles'
-  url 'https://github.com/jmoney/dotfiles/archive/v1.2.4.tar.gz'
+  url 'https://github.com/jmoney/dotfiles/archive/v1.2.5.tar.gz'
   sha256 'c386de3963a6db132d94b5edf80b873bce0282dd18a4756a8492e9e03bf88711'
 
   head 'https://github.com/jmoney/dotfiles.git'
