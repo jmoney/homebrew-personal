@@ -5,21 +5,21 @@
 class Ghpr < Formula
   desc "Creates a pull request on GitHub setting the PR title to JIRA issue title"
   homepage "https://jmoney.dev/create-pr-from-jira"
-  version "0.3"
+  version "0.4"
   license "Apache 2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/jmoney/create-pr-from-jira/releases/download/0.3/ghpr_0.3_darwin_amd64.tar.gz"
-      sha256 "836d64255fce2048a630d68b4d4342b83b114e35ad7ef62b3e0f2a3773edb966"
+      url "https://github.com/jmoney/create-pr-from-jira/releases/download/0.4/ghpr_0.4_darwin_amd64.tar.gz"
+      sha256 "3d77c2ba082b8ab5ea8a2fe14ae60286af772501da7a45cc9c8ef0a926c7a565"
 
       def install
         bin.install "ghpr"
       end
     end
     on_arm do
-      url "https://github.com/jmoney/create-pr-from-jira/releases/download/0.3/ghpr_0.3_darwin_arm64.tar.gz"
-      sha256 "ccef7c0fc4eef6dcf2470e7bd4b8588be73b9001f5e1af7afecfbb653ae11233"
+      url "https://github.com/jmoney/create-pr-from-jira/releases/download/0.4/ghpr_0.4_darwin_arm64.tar.gz"
+      sha256 "f263825f27c1d9006627bc83e6d297e69ad9a445a228ec55395a0e4043878c54"
 
       def install
         bin.install "ghpr"
@@ -30,8 +30,8 @@ class Ghpr < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jmoney/create-pr-from-jira/releases/download/0.3/ghpr_0.3_linux_amd64.tar.gz"
-        sha256 "54cc1ae6704a4af3b5887268e726a2f87b411713a04520c2061aee6d6475d880"
+        url "https://github.com/jmoney/create-pr-from-jira/releases/download/0.4/ghpr_0.4_linux_amd64.tar.gz"
+        sha256 "8472331c1d081eaa6b1f36484c061e6fcc492bd7c9e3afeddf77ecef42c32ff6"
 
         def install
           bin.install "ghpr"
@@ -40,8 +40,8 @@ class Ghpr < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jmoney/create-pr-from-jira/releases/download/0.3/ghpr_0.3_linux_arm64.tar.gz"
-        sha256 "385fb8846485f39b0d7928ac800d3fd5f317f2f270424611a06395078191860e"
+        url "https://github.com/jmoney/create-pr-from-jira/releases/download/0.4/ghpr_0.4_linux_arm64.tar.gz"
+        sha256 "f14ae7140bdfc561041434649f13033d7cdc29fb7da2d78564d40fda944e9098"
 
         def install
           bin.install "ghpr"
